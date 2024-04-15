@@ -1,0 +1,89 @@
+<div style="width: 100%; height: 100vh;" class="bg-info d-flex align-items-center justify-content-center">
+
+    <div class="row">
+
+        <div class="col-lg-2"></div>
+
+
+        <div class="col-lg-8 shadow">
+
+            <div class="row">
+
+                <div class="col-lg-6 mt-5">
+                    <img class="img-fluid"
+                        src="https://static.vecteezy.com/system/resources/previews/019/872/884/non_2x/3d-minimal-user-login-page-user-authentication-concept-user-verification-concept-login-page-with-a-fingerprint-padlock-3d-illustration-free-png.png"
+                        alt="no image">
+
+                </div>
+
+
+                <div class="col-lg-6 p-5">
+
+                    <div class="d-flex mb-2">
+
+                        <h2 class="text-center text-light">Register page</h2>
+
+                    </div>
+
+                    <form>
+
+                        <!-- user name  -->
+                        <div class="form-floating mb-3">
+
+
+                            <input #username type="text" class="form-control" id="floatingInput" placeholder="username">
+
+                            <label for="floatingInput">User name</label>
+
+                        </div>
+
+
+                        <!-- password -->
+
+                        <div class="form-floating mb-3">
+
+                            <label for="floatingpassword" class="form-label">Password</label>
+
+                            <input #pswd type="password" class="form-control" id="floatingPassword"
+                                placeholder="username">
+
+                        </div>
+
+                        <!-- button -->
+
+                        <div class="mb-3 d-flex justify-content-between">
+                            <button (click)="register(username,pswd)" type="button"
+                                class="btn btn-danger me-3">Register</button>
+                            <span> user already exist ?click here to <a routerLink="">Login</a></span>
+
+
+                        </div>
+
+
+
+
+
+
+                    </form>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="col-lg-2"></div>
+
+
+    </div>
+
+
+</div>

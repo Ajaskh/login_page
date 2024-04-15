@@ -1,0 +1,52 @@
+
+<h1 class="text-center text-primary"> hello:{{userName}} </h1>
+
+<div class="row mt mt-5">
+
+    <div class="col-lg-4"></div>
+
+
+    <div class="col-lg-4 p-5 shadow">
+
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">First Name</label>
+              <input [(ngModel)]="fname" name="fname" type="test" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+ 
+            </div>
+            <div class="mb-3">
+
+              <label for="exampleInputPassword1" class="form-label">Last Nmae</label>
+              <input [(ngModel)]="lname" name="lname" type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+
+                <label for="exampleInputPassword1" class="form-label">Age</label>
+                <input [(ngModel)]="age" name="age" type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3">
+
+                <label for="exampleInputPassword1" class="form-label">Designation</label>
+                <input [(ngModel)]="desig" name="desig" type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+
+           
+            <div class="text-center"> <button (click)="update()" type="submit" class="btn btn-success text-center">Submit</button> </div>
+          </form>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="col-lg-4"></div>
+
+
+
+
+</div>
